@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Banco Popular | Simulador de Crédito de Libranza</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</head>
+
+<body>
+
+<!--================ BARRA SUPERIOR =================-->
+
+<div class="barra-superior">
+
+    <div class="izquierda">
+
+        <a href="#"><i class="fa-solid fa-location-dot"></i> Encuéntranos</a>
+
+        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Educación Financiera</a>
+
+    </div>
+
+    <div class="derecha">
+
+        <a href="#">Transparencia</a>
+
+        <a href="#">Consumidor</a>
+
+        <a href="#">A-</a>
+
+        <a href="#">A+</a>
+
+    </div>
+
+</div>
+
+<!--================ HEADER =================-->
+
+<header>
+
+    <div class="logo">
+
+    <img src="img/logo-banco-popular.jpg"
+         alt="Banco Popular"
+         class="logoBanco">
+
+</div>
+
+    <nav>
+
+        <a href="#inicio">Inicio</a>
+
+        <a href="#credito">Crédito</a>
+
+        <a href="#beneficios">Beneficios</a>
+
+        <a href="#simulador">Simulador</a>
+
+        <a href="#contacto">Contacto</a>
+
+    </nav>
+
+    <div class="zona">
+<a href="login.html" class="btnZona">
+    <i class="fa-solid fa-lock"></i>
+    Zona Transaccional
+</a>
+
+    </div>
+
+</header>
+
+<!--================ HERO =================-->
+
+<section class="hero" id="inicio">
+
+    <div class="heroTexto">
+
+        <span class="etiqueta">
+
+            Crédito de Libranza
+
+        </span>
+
+        <h1>
+
+            Acércate a cumplir tus metas
+
+        </h1>
+
+        <p>
+
+            Simula tu crédito de libranza de forma rápida y conoce el valor
+            aproximado de tus cuotas mensuales.
+
+        </p>
+
+        <a href="#simulador" class="botonPrincipal">
+
+            Simular crédito
+
+        </a>
+
+    </div>
+
+    <div class="heroImagen">
+
+        <img src="img/banner.png" alt="Crédito">
+
+    </div>
+
+</section>
+<!--================ INFORMACIÓN =================-->
+
+<section class="informacion" id="credito">
+
+    <h2>¿Qué es un Crédito de Libranza?</h2>
+
+    <p class="texto">
+
+        El crédito de libranza es un préstamo cuyas cuotas son descontadas
+        directamente de la nómina o pensión del cliente, ofreciendo mayor
+        comodidad y tasas competitivas.
+
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <i class="fa-solid fa-money-bill-wave"></i>
+
+            <h3>Cuotas Fijas</h3>
+
+            <p>
+
+                Conoce desde el inicio el valor aproximado de tus cuotas
+                mensuales.
+
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-calendar-days"></i>
+
+            <h3>Plazos Flexibles</h3>
+
+            <p>
+
+                Elige el plazo que mejor se adapte a tus necesidades.
+
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-shield-halved"></i>
+
+            <h3>Seguridad</h3>
+
+            <p>
+
+                El pago se realiza mediante descuento por nómina.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--================ BENEFICIOS =================-->
+
+<section class="beneficios" id="beneficios">
+
+    <h2>Beneficios</h2>
+
+    <div class="contenedor-beneficios">
+
+        <div class="beneficio">
+
+            <i class="fa-solid fa-percent"></i>
+
+            <h3>Tasas Competitivas</h3>
+
+            <p>
+
+                Simula un crédito con excelentes condiciones financieras.
+
+            </p>
+
+        </div>
+
+        <div class="beneficio">
+
+            <i class="fa-solid fa-bolt"></i>
+
+            <h3>Proceso Ágil</h3>
+
+            <p>
+
+                Obtén resultados en pocos segundos.
+
+            </p>
+
+        </div>
+
+        <div class="beneficio">
+
+            <i class="fa-solid fa-chart-line"></i>
+
+            <h3>Planeación Financiera</h3>
+
+            <p>
+
+                Conoce el costo aproximado antes de solicitar tu crédito.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--================ PRODUCTOS =================-->
+
+<section class="productos">
+
+    <h2>Otros Productos Financieros</h2>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <i class="fa-solid fa-credit-card"></i>
+
+            <h3>Tarjetas de Crédito</h3>
+
+            <p>
+
+                Diferentes opciones para tus compras y necesidades.
+
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-piggy-bank"></i>
+
+            <h3>Cuenta de Ahorros</h3>
+
+            <p>
+
+                Administra tu dinero con seguridad.
+
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-house"></i>
+
+            <h3>Crédito Hipotecario</h3>
+
+            <p>
+
+                Financia la compra de tu vivienda.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<!--================ SIMULADOR =================-->
+
+<section class="simulador" id="simulador">
+
+    <h2>Simulador de Crédito de Libranza</h2>
+
+    <p class="texto">
+
+        Ingresa la información para calcular el valor aproximado de tu crédito.
+
+    </p>
+
+    <div class="formulario">
+
+        <div class="campo">
+
+            <label>Nombre completo</label>
+
+            <input type="text" id="nombre" placeholder="Ingrese su nombre">
+
+        </div>
+
+        <div class="campo">
+
+            <label>Valor del préstamo</label>
+
+            <input type="number" id="monto" placeholder="$">
+
+        </div>
+
+        <div class="campo">
+
+            <label>Plazo</label>
+
+            <select id="plazo">
+
+                <option value="12">12 meses</option>
+                <option value="24">24 meses</option>
+                <option value="36">36 meses</option>
+                <option value="48">48 meses</option>
+                <option value="60">60 meses</option>
+
+            </select>
+
+        </div>
+
+        <div class="campo">
+
+            <label>Tasa mensual (%)</label>
+
+            <input type="number" id="interes" value="1.2" step="0.1">
+
+        </div>
+
+        <button id="calcular">
+
+            Calcular Crédito
+
+        </button>
+
+        <div class="acciones">
+
+            <button id="pdf">
+
+                Descargar PDF
+
+            </button>
+
+            <button id="imprimir">
+
+                Imprimir
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="resultado" id="resultado">
+
+        <h3>Resultado</h3>
+
+        <p>Aquí aparecerá la simulación.</p>
+
+    </div>
+
+</section>
+
+<!--================ TABLA =================-->
+
+<section class="tabla">
+
+    <h2>Tabla de Amortización</h2>
+
+    <div class="tabla-responsive">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Cuota</th>
+                    <th>Capital</th>
+                    <th>Interés</th>
+                    <th>Total</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="tablaAmortizacion">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+<!--================ GRAFICO =================-->
+
+<section class="grafico">
+
+    <h2>Comportamiento del Crédito</h2>
+
+    <canvas id="graficoCredito"></canvas>
+
+</section>
+
+<!--================ EQUIPO =================-->
+
+<section class="equipo">
+
+    <h2>Equipo del Proyecto</h2>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <i class="fa-solid fa-user"></i>
+
+            <h3>Lishet Mellizo</h3>
+
+            <p>Integrante del proyecto.</p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-user"></i>
+
+            <h3>Geidy Córtez</h3>
+
+            <p>Integrante del proyecto.</p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-user"></i>
+
+            <h3>Laura Salazar</h3>
+
+            <p>Integrante del proyecto.</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--================ CONTACTO =================-->
+
+<section class="contacto" id="contacto">
+
+    <h2>Contáctanos</h2>
+
+    <div class="datos-contacto">
+
+        <p><i class="fa-solid fa-location-dot"></i> Popayán - Cauca</p>
+
+        <p><i class="fa-solid fa-phone"></i> (602) 000 0000</p>
+
+        <p><i class="fa-solid fa-envelope"></i> contacto@bancopopular.com</p>
+
+    </div>
+
+</section>
+
+<!--================ FOOTER =================-->
+
+<footer>
+
+    <div class="footer-contenido">
+
+        <h3>Banco Popular</h3>
+
+        <p>
+
+            Simulador de Crédito de Libranza.
+
+        </p>
+
+        <p>
+
+            Proyecto académico desarrollado para el SENA.
+
+        </p>
+
+        <hr>
+
+        <small>
+
+            Este sitio fue elaborado únicamente con fines educativos y no corresponde al sitio oficial del Banco Popular.
+
+        </small>
+
+    </div>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
